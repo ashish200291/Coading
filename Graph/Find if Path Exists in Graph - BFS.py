@@ -3,7 +3,8 @@ from collections import deque
 class Solution:
     def validPath(self, n: int, edges: List[List[int]], source: int, destination: int) -> bool:
         
-        ad_list = [[] for _ in range(n)]
+        ad_list = defaultdict(list)
+        #ad_list = [[] for _ in range(n)]
         
         for a,b in edges:
             ad_list[a].append(b)
