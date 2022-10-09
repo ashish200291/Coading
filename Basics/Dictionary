@@ -1,0 +1,9 @@
+from collections import defaultdict
+2	edges = [[0,1],[1,2],[0,2],[2,0],[2,3]]
+3	
+4	neighbors = defaultdict(list)
+5	for n1, n2 in edges:
+6	    neighbors[n1].append(n2)
+7	    neighbors[n2].append(n1)
+
+############################################################
